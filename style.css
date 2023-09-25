@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* the padding and border 
+    will be included in the total
+    width and height of the element */
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* dark purple color */
+    background: #39297b;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    /* left and right is set to auto
+    to center the image */
+    margin: 100px auto 50px;
+    font-weight: 600;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    /* center the form */
+    margin: auto;
+    height: 80px;
+    background: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+form input {
+    /* occupy the entire remainin space */
+    flex: 1;
+    /* 100% of available parent height */
+    height: 100%;
+    outline: 0;
+    border: 0;
+    /* inherit parents background color */
+    background: transparent;
+    color: white;
+    /* increase font */
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+form button {
+    padding: 0 40px;
+    height: 100%;
+    background: #ff3929;
+    color: #fff;
+    font-size: 18px;
+    outline: 0;
+    border: 0;
+    /* shit!!, never knew this existed */
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* design the placeholder */
+
+::placeholder {
+    /* white color */
+    color: #fff;
+    font-size: 18px;
+}
+
+#show-more-btn {
+    background: #ff3929;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    /* we suppose self-center by now */
+    margin: 10px auto 100px;
+    /* why the hell isn't this a 
+    default option for all button elements
+    by now */
+    cursor: pointer;
+    /* this was what made it a standalone element
+    and to be able to carry out its own
+    css with its power!! like a div */
+    display: none;
+}
